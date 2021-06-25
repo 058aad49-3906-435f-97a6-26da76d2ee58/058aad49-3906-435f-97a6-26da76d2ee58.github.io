@@ -4,15 +4,16 @@
 </head>
 <body>
 <h1>Authorization Code</h1>
-<p id="elem-code"></p>
+<p id="p"></p>
 <script>
 (function() {
 	const queryString = window.location.search;
 	const urlParams = new URLSearchParams(queryString);
 	const code = urlParams.get('code');
 	console.log('code: ', code);
-	var elem = document.getElementById('elem-code');
-	elem.textContent = code;
+	var p = document.getElementById('p');
+	console.log('p: ', p);
+	p.text = code;
 })();
 </script>
 </body>
