@@ -4,7 +4,7 @@
 </head>
 <body>
 <h1>Authorization Code</h1>
-<p id="p"></p>
+<p id="p"> </p>
 <script>
 (function() {
 	const queryString = window.location.search;
@@ -13,7 +13,7 @@
 	console.log('code: ', code);
 	var p = document.getElementById('p');
 	console.log('p: ', p);
-	p.textContent = code.value
+	p.textContent += "This just got added";
 })();
 </script>
 </body>
