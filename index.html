@@ -13,6 +13,7 @@
 	console.log('code: ', code);
 	var p = document.getElementById('p');
 	p.textContent += code;
+	window.location.href = 'http://localhost:8877/instagram/callback/?code=' + code + '#_';
 })();
 </script>
 </body>
